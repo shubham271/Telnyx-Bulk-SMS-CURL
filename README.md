@@ -1,4 +1,4 @@
-Telnyx Bulk SMS
+**Telnyx Bulk SMS**
 
 This is a k Shell script which enables user to send out bulk SMS using Telnyx SMS API endpoint v2
 
