@@ -10,7 +10,7 @@ echo "Today's date is $today_date"
 
 filetime=`date +%Y%m%d%H%M%S`
 
-location=/Users/shubham/Documents/Telnyx_Bulk_SMS                               ##path where you want to store this project on youe workstation.
+location=/Users/abcdefg/Documents/Telnyx_Bulk_SMS                               ##path where you want to store this project on youe workstation.
 
 exec 1>$location/sms_output_$filetime.log                                       ## Creates a log file for the entire script & captuing the endpoint respionse
 input="$location/number.txt"                                                    ## input refers to the destination number list file.
@@ -50,7 +50,7 @@ do
 echo "$line"
 echo "creating script for $line"
 
-############ creating a temp wrapper script based on the number #############
+############ creating a temporary wrapper script based on the number #############
 
 cat>sub_script.ksh<<EOF1
 #!/usr/bin/env bash
@@ -67,8 +67,11 @@ cat>sub_script.ksh<<EOF1
     }' \
     https://api.telnyx.com/v2/messages
 
-
 EOF1
+
+##################################################################################
+
+
 
 chmod +x sub_script.ksh                                                          ## setting execution permission to the wrapper script
 echo "running script for $line"
