@@ -1,6 +1,6 @@
 **Telnyx Bulk SMS (CURL)**
 
-This is a k Shell script which enables user to send out bulk SMS using Telnyx SMS API endpoint v2
+This is a Shell script which enables user to send out bulk SMS using Telnyx SMS API endpoint v2
 
 Telnyx endpoint details can be found in the developer's page - https://developers.telnyx.com/docs/api/v2/messaging/Messages#createMessage
 
